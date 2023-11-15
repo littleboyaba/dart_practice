@@ -6,14 +6,14 @@ void main(){
   String address = 'Mirpur, \' Dhaka';
   int age = 25;
 
-  String fullDetails = userName + ' - ' + address; // concat
+  String fullDetails = '$userName - $address'; // concat
   print(fullDetails);
 
-  String userDetails = userName + ' - ' + age.toString();
+  String userDetails = '$userName - $age';
   print(userDetails);
 
   String userDetailsSecondary =
-      'User name is' + userName + 'and' + 'age is' + age.toString();
+      'User name is${userName}andage is$age';
   userDetailsSecondary = 'User name is $userName and age is $age';// String interpolation
   print(userDetailsSecondary);
   print(userDetailsSecondary.length);
