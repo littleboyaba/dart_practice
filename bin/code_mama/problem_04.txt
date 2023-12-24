@@ -1,0 +1,57 @@
+Intergapped Number Range
+Problem Statement
+
+You are given four integers: l1, r1, l2, and r2.
+Your task is to print a specific range of integers following certain rules.
+ Your goal is to print all the integers between l1l1 and r1r1,
+ excluding the integers between l2l2 and r2r2.
+
+However, there's a twist. The range [l2,r2][l2,r2] creates a gap within the first
+range [l1,r1][l1,r1]. Your task is to identify this gap and print the two segments
+of the range separately.
+Input
+
+The input consists of four integers in a single line:
+
+    l1, r1, l2, and r2
+
+Output
+
+Print two segments of integers separated by a space:
+
+    The integers between l1 and l2 (inclusive of l1, but excluding l2).
+    The integers between r2 and r1 (excluding of r2, but inclusive r1).
+
+Constraints
+
+    0 ≤ l1 ≤ 900
+    10 ≤ r1 ≤ 1000
+    l1<r1
+    1 ≤ l2 ≤ 901
+    2 ≤ r2 ≤ 902
+    l1<l2<r2<r1
+
+Example 1:
+Input:
+
+20 40 30 35
+
+Output:
+
+20 21 22 23 24 25 26 27 28 29 36 37 38 39 40
+
+Example 2:
+Input:
+
+1 10 3 6
+
+Output:
+
+1 2 7 8 9 10
+
+Notes:
+
+In the example provided, the first range is [20,40][20,40], and the second range is
+[30,35][30,35]. The integers between 30 and 35 (inclusive) create a gap in the first range.
+The program prints two separate segments: one from 20 to 29 and the other from 36 to 40.
+This honors the constraint of excluding the integers between l2l2 and r2r2.
