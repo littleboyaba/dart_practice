@@ -1,4 +1,4 @@
-Intergapped Number Range
+Interoped Number Range
 Problem Statement
 
 You are given four integers: l1, r1, l2, and r2.
